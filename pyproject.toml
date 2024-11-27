@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+dependencies = [
+  "requests",
+  "pyperclip",
+]
+name = "PyUtilities"
+version = "0.79"
+authors = [
+  { name="Rikka", email="rikkadoesthings@gmail.com" },
+]
+description = "A bunch of utilities for Python."
+readme = "README.md"
+requires-python = ">=2.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/RikkaDoesLessThings/PyUtilities"
+Issues = "https://github.com/RikkaDoesLessThings/PyUtilities/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyutilities"]
